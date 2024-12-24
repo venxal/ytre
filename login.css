@@ -1,0 +1,197 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    color: #333;
+}
+
+/* Gradient Bar */
+.gradient-bar {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-bar .small-logo {
+    height: 35px;
+    margin-right: 10px;
+}
+
+.gradient-bar .header-text {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Navigation Section */
+.navigation {
+    background-color: #333;
+    padding: 15px 0; /* Wider navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.navigation-buttons a,
+.nav-button {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.navigation-buttons a:hover,
+.nav-button:hover {
+    background-color: #ff9c00;
+}
+
+.navigation-buttons a.active,
+.nav-button.active {
+    background-color: #e89404;
+}
+
+/* Login Page */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: calc(100vh - 115px); /* Adjust height for gradient and navbar */
+    padding: 20px;
+}
+
+.login-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 10px; /* Adjust this value to bring the card closer to the navbar */
+}
+
+.login-card h2 {
+    color: #ff7e5f;
+    margin-bottom: 10px;
+}
+
+.login-card p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.login-card label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #ff9d00, #ff3e3e);
+}
+
+.signup-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.signup-text a {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Adjustments for consistency */
+.gradient-bar .header-text,
+.navigation-buttons a {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(45deg, #ff9d00, #ff3e3e);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Globe Icon Styling */
+.globe-icon {
+    position: absolute;
+    top: 20px; /* Adjust this to position vertically */
+    right: 20px; /* Adjust this to position horizontally */
+    width: 150px; /* Set the size of the icon */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure it appears above other elements */
+}

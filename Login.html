@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1 id="page-title">Gepersonaliseerde Abonnementen</h1>
+        </div>
+        <img src="C:\Users\user\Downloads\Screenshot_2024-12-22_203951-removebg-preview.png" alt="Globe Icon" class="globe-icon">
+    </header>
+
+    <!-- Navigation Bar -->
+    <div class="navigation">
+        <ul class="navigation-buttons">
+            <li><a href="index.html" class="nav-button">Home</a></li>
+            <li><a href="about.html" class="nav-button">Over</a></li>
+            <li><a href="services.html" class="nav-button">Services</a></li>
+            <li><a href="contact.html" class="nav-button">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Login Form Section -->
+    <div class="login-page">
+        <div class="login-card">
+            <h2>Welkom Terug!</h2>
+            <p>Log hier in bij uw account.</p>
+            <form action="login_handler.php" method="POST">
+                <label for="username">Gebruikersnaam</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Wachtwoord</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="btn-primary">Log In</button>
+            </form>
+
+            <div class="signup-text">
+                <p>Nieuw bij Gepersonaliseerde Abbonementen?</p>
+                <p> <a href="signup.html">Account aanmaken</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Desk</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="header-content">
+            <h1>Service Desk</h1>
+            <p class="curated-text">Heb je vragen? Neem gerust contact met ons op!</p>
+            <p>Wij zijn hier om je te helpen met je vragen en opmerkingen!</p>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <div class="navigation-buttons">
+        <a href="index.html">Home</a>
+        <a href="toiletries.html">Verzorging</a>
+        <a href="cleaning.html">Schoonmaak</a>
+        <a href="makeup.html">Make-Up</a>
+        <a href="essentials.html">Benodigdheden</a>
+        <li><a href="Login.html">Login</a></li>
+       <li><a href="aboutus.html">Over Ons</a></li>
+        <a href="contact.html"class="active">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-container">
+        <section class="faq-section">
+            <h2>Veelgestelde Vragen</h2>
+            <ul>
+                <li>Is er een minimaal bestelbedrag? <span>Ja, het minimale bestelbedrag is €15.</span></li>
+                <li>Kan ik mijn bezorgmoment nog wijzigen? <span>Ja, je kunt het bezorgmoment tot 24 uur voor levering aanpassen via je account.</span></li>
+                <li>Kan ik nog producten toevoegen of verwijderen nadat ik al heb besteld? <span>Je kunt je bestelling aanpassen tot 12 uur voor verzending.</span></li>
+            </ul>
+        </section>
+
+        <section class="contact-form-section">
+            <h2>Contactformulier</h2>
+            <form id="contact-form">
+                <label for="name">Naam:</label>
+                <input type="text" id="name" name="name" required placeholder="Voer je naam in">
+        
+                <label for="email">E-mailadres:</label>
+                <input type="email" id="email" name="email" required placeholder="Voer je e-mailadres in">
+        
+                <label for="subject">Onderwerp:</label>
+                <input type="text" id="subject" name="subject" required placeholder="Onderwerp van je bericht">
+        
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Schrijf je bericht hier..."></textarea>
+        
+                <button type="submit">Verzenden</button>
+            </form>
+            <div id="form-feedback"></div>
+        </section>
+        
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Gepersonaliseerde Abonnementen. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

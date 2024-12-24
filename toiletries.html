@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verzorgings Artikelen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+        <a href="index.html">Home</a>
+        <a href="toiletries.html" class="active">Verzorging</a>
+        <a href="cleaning.html">Schoonmaakartikelen</a>
+        <a href="makeup.html">Make-Up</a>
+        <a href="essentials.html">Benodigdheden</a>
+        <a href="contact.html">Contact</a>
+        <li><a href="Login.html">Login</a></li>
+            <li><a href="aboutus.html">Over Ons</a></li>
+            <li><div class="header-right">
+                <!-- Search Bar -->
+                <input type="text" id="searchBar" placeholder="Search...">
+                <button onclick="searchProducts()">Search</button>
+
+                <!-- Cart Icon -->
+                <a href="javascript:void(0);" class="cart-icon" onclick="toggleCart()">Cart (<span id="cartCount">0</span>)</a>
+            </div></li>
+            <li>
+                <div class="nav-item">
+                    <button class="nav-button dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Selected Language" class="flag-icon">
+                        <span>Taal</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                        <a class="dropdown-item" href="#" data-lang="en">
+                            <img src="https://static.vecteezy.com/system/resources/previews/005/416/914/original/flag-of-united-kingdom-illustration-free-vector.jpg" alt="English Flag" class="flag-icon"> English
+                        </a>
+                        <a class="dropdown-item" href="#" data-lang="nl">
+                            <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_netherland-1024.png" alt="Dutch Flag" class="flag-icon"> Nederlands
+                        </a>
+                     
+
+                    </div>
+                </div>
+            </li>
+        
+
+    </div>
+
+    <header class="header">
+        <h1>Verzorgings Artikelen</h1>
+        <p class="curated-text">De populairste verzorgings artikelen op dit moment.</p>
+        <p>Heeft u suggesties voor nieuwe artikelen? Geef dit dan graag aan ons door!</p>
+    </header>
+
+    <div class="items-grid">
+        <!-- Item 1 -->
+        <div class="item-card">
+            <img src="https://static.thcdn.com/images/large/webp//productimg/1600/1600/15274324-5045158719189258.jpg" alt="Biodegradable Toothbrush">
+            <h4>Oral-B Tandpasta</h4>
+            <p>Oral-B tandpasta verhoogt de tandglazuurdichtheid elke keer dat je poetst om je tanden in goede conditie te houden. De formule remineraliseert het tandoppervlak om je tanden te versterken en helpt het glazuur te beschermen tegen toekomstig dichtheidsverlies.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €3,00</button>
+                <button data-frequency="biweekly">Tweewekelijks: €5,50</button>
+                <button data-frequency="monthly">Maandelijks: €10,00</button>
+            </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item-card">
+            <img src="https://cdn.broedersgezondheidswinkel.nl/images/ot/holland-pharma-280422.900x900.jpg?e=Lanczos3&q=75&crop=no&rotation=0&origin=no&v=20230501" alt="Maandverband">
+            <h4>Always Maandverband</h4>
+            <p>Maandverband met tot 10 uur bescherming. Voor extra bescherming 's nachts. De LeakGuard-beschermrandjes helpen lekken voorkomen. Superabsorberend maandverband met InstantDry-systeem dat vocht in enkele seconden absorbeert.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €5</button>
+                <button data-frequency="biweekly">Tweewekelijks: €9,00</button>
+                <button data-frequency="monthly">Maandelijks: €16,00</button>
+            </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item-card">
+            <img src="https://media.s-bol.com/YRo5GDrArXWK/jy4LX5/550x612.jpg" alt="Scheermesjes">
+            <h4>Gillette Scheermesjes</h4>
+            <p>Gillette Mach3 scheermesjes, 8 stuks. Voor het scheren dichter op de huid in één beweging. 50% minder druk van de mesjes op de huid voor gegarandeerd scheren zonder roodheid. Geavanceerd draaiend scheerhoofd.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €17,00</button>
+                <button data-frequency="biweekly">Tweewekelijks: €20,00</button>
+                <button data-frequency="monthly">Maandelijks: €25,00</button>
+            </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="item-card">
+            <img src="c:\Users\user\AppData\Local\Packages\Microsoft.ScreenSketch_8wekyb3d8bbwe\TempState\Snips\Screenshot 2024-12-22 225258.png" alt="Conditioner">
+            <h4>Andrélon Conditioner</h4>
+            <p> Andrélon Kokos Boost Conditioner: Andrélon Kokos Boost Conditioner, verrijkt met kokosolie en bamboe-extract, geeft luchtig volume en glans aan fijn haar. De voedende conditioner, met plantaardige, ontwarrende ingrediënten bevat kokosolie en bamboe-extract. De conditioner zorgt er ook voor dat je haar makkelijk doorkambaar is na het wassen.</p>
+            <div class="subscription-options">
+                <button data-frequency="weekly">Wekenlijks: €22</button>
+                <button data-frequency="biweekly">Tweewekelijks: €24</button>
+                <button data-frequency="monthly">Maandelijks: €25</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
